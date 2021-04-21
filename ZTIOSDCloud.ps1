@@ -8,11 +8,11 @@ if ((Get-MyComputerModel) -match 'Virtual') {
 }
 
 #Make sure I have the latest OSD Content
-Write-Host  -ForegroundColor Cyan "Updating OSD PowerShell Module"
-Install-Module OSD -Force
+#Write-Host  -ForegroundColor Cyan "Updating OSD PowerShell Module"
+#Install-Module OSD -Force
 
-Write-Host  -ForegroundColor Cyan "Importing OSD PowerShell Module"
-Import-Module OSD -Force
+#Write-Host  -ForegroundColor Cyan "Importing OSD PowerShell Module"
+#Import-Module OSD -Force
 
 #TODO: Spend the time to write a function to do this and put it here
 #Write-Host  -ForegroundColor Cyan "Ejecting ISO"

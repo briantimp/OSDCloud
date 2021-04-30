@@ -7,6 +7,10 @@ if ((Get-MyComputerModel) -match 'Virtual') {
     Set-DisRes 1920
 }
 
+#Install-Script -Name Get-WindowsAutoPilotInfo -Force
+# Export to E:\OSDCloud\
+
+
 #Make sure I have the latest OSD Content
 #Write-Host  -ForegroundColor Cyan "Updating OSD PowerShell Module"
 #Install-Module OSD -Force

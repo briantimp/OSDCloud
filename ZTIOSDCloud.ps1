@@ -1,4 +1,5 @@
 Write-Host  -ForegroundColor Cyan "Starting OSDCloud Deployment ..."
+Write-Host  -ForegroundColor Cyan "Fasten your seatbelts!"
 Start-Sleep -Seconds 5
 
 #Change Display Resolution for Virtual Machine
@@ -24,8 +25,8 @@ if ((Get-MyComputerModel) -match 'Virtual') {
 #Start-Sleep -Seconds 5
 
 #Start OSDCloud ZTI the RIGHT way
-Write-Host  -ForegroundColor Cyan "Start OSDCloud"
-Start-OSDCloud -OSLanguage nl-nl -OSBuild 20H2 -OSEdition Enterprise
+Write-Host  -ForegroundColor Cyan "Start Windows 10 21H1 installation"
+Start-OSDCloud -OSLanguage nl-nl -OSBuild 21H1 -OSEdition Enterprise
 
 #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
 #Write-Host  -ForegroundColor Cyan "Starting OSDCloud PostAction ..."
@@ -34,4 +35,4 @@ Start-OSDCloud -OSLanguage nl-nl -OSBuild 20H2 -OSEdition Enterprise
 #Restart from WinPE
 Write-Host  -ForegroundColor Cyan "Restarting in 20 seconds!"
 Start-Sleep -Seconds 20
-#wpeutil reboot
+wpeutil reboot
